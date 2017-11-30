@@ -2,15 +2,24 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FSM_GC_Normal : MonoBehaviour {
+public class FSM_GC_Normal : GC_Estado
+{
+	public GC_Estado estadoPausa;
 
-	// Use this for initialization
-	void Start () {
-		
+	public override void Entrar (FSM fsm)
+	{
+		Time.timeScale = 1f;
 	}
-	
-	// Update is called once per frame
-	void Update () {
+
+	public override void Executar (FSM fsm)
+	{
+		if (Input.GetButtonDown ("Cancel")) {
+			fsm.MudarEstado (estadoPausa);
+		}
+	}
+
+	public override void Sair (FSM fsm)
+	{
 		
 	}
 }

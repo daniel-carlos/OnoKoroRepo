@@ -60,7 +60,7 @@ public class SKR_Cooldown : Skill_Requisito
 
 	public override void Erro ()
 	{
-		throw new System.NotImplementedException ();
+		
 	}
 
 	public override void Sucesso ()
