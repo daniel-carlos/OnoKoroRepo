@@ -5,11 +5,10 @@ using UnityEngine;
 public class GameController : MonoBehaviour
 {
 	[Tooltip ("Prefab do Player que será instanciado")]
-	public GameObject playerPrefab;
+	public GameObject player;
 
 	[Tooltip ("Local onde o Player iniciará")]
 	public Transform playerSpawn;
-	GameObject player;
 
 	public GameObject bannerPrefab;
 	GameObject banner;
@@ -29,19 +28,15 @@ public class GameController : MonoBehaviour
 
 	public void SetUpCamera ()
 	{
-		Camera.main.GetComponent<CameraTarget> ().alvo = player.transform.Find ("Foco");
+		Transform a = player.transform.Find ("Foco");
+		Debug.Log (a);
+		Camera.main.GetComponent<CameraTarget> ().alvo = a;
 	}
 
 	// Update is called once per frame
 	void Update ()
 	{
 		
-	}
-
-	public void CriarPlayer ()
-	{
-		GameObject player = Instantiate (playerPrefab, playerSpawn.position, Quaternion.identity);
-		this.player = player;
 	}
 
 	public void CriarBanner ()
