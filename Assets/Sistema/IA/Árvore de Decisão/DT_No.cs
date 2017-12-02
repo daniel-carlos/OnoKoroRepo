@@ -4,5 +4,5 @@ using UnityEngine;
 
 public abstract class DT_No : MonoBehaviour
 {
-	public abstract void Ativar ();
+	public abstract void AtivarDT ();
 }
