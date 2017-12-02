@@ -11,6 +11,7 @@ public class FSM_GC_Pausa : GC_Estado
 	{
 		Time.timeScale = 0f;
 		menuPausa.SetActive (true);
+		gc.ControlarPersonagem (false);
 	}
 
 	public override void Executar (FSM fsm)

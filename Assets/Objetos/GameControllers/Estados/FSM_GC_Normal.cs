@@ -9,6 +9,7 @@ public class FSM_GC_Normal : GC_Estado
 	public override void Entrar (FSM fsm)
 	{
 		Time.timeScale = 1f;
+		gc.ControlarPersonagem (true);
 	}
 
 	public override void Executar (FSM fsm)

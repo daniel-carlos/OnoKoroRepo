@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour
 {
@@ -49,5 +50,21 @@ public class GameController : MonoBehaviour
 	public void Configurar (bool showHUD, bool stopTime, bool playerControl)
 	{
 		player.GetComponent<PlayerEntrada> ().enabled = playerControl;
+	}
+
+	public void SairJogo ()
+	{
+		
+	}
+
+	public void ControlarPersonagem (bool controlar)
+	{
+		player.GetComponent<PlayerEntrada> ().enabled = controlar;
+	}
+
+
+	public void RetornarAoMenu ()
+	{
+		SceneManager.LoadScene ("Menu Inicial");
 	}
 }

@@ -10,6 +10,7 @@ public class FSM_GC_Setup : GC_Estado
 	{
 		Debug.Log ("Iniciando setup da fase");
 		this.gc = fsm.GetComponent<GameController> ();
+
 		//this.gc.CriarPlayer ();
 		//gc.CriarBanner ();
 	}
