@@ -1,15 +1,22 @@
 fileFormatVersion: 2
-guid: dda196f4192e0b64f873882011eb02f9
-timeCreated: 1512253436
+guid: c842c9f302df715469eca69341ce021d
+timeCreated: 1512305989
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
     21300000: Frames_0
-    21300002: Frames_1
-    21300004: Frames_2
-    21300006: Frames_3
-    21300008: Frames_4
-    21300010: Frames_5
+    21300002: Frames_2
+    21300004: Frames_5
+    21300006: Frames_6
+    21300008: Frames_7
+    21300010: Frames_8
+    21300012: Frames_9
+    21300014: Frames_10
+    21300016: Frames_1
+    21300018: Frames_3
+    21300020: Frames_11
+    21300022: Frames_12
+    21300024: Frames_4
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -37,7 +44,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 0
     aniso: -1
     mipBias: -1
     wrapU: 1
@@ -48,11 +55,11 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 75
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -105,13 +112,13 @@ TextureImporter:
       name: Frames_0
       rect:
         serializedVersion: 2
-        x: 19
-        y: 185
+        x: 9
+        y: 203
         width: 77
-        height: 79
+        height: 116
       alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 26, y: 25, z: 25, w: 24}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 16, y: 10, z: 16, w: 93}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -119,27 +126,13 @@ TextureImporter:
       name: Frames_1
       rect:
         serializedVersion: 2
-        x: 132
-        y: 185
+        x: 95
+        y: 240
         width: 77
         height: 79
       alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 26, y: 26, z: 25, w: 24}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Frames_2
-      rect:
-        serializedVersion: 2
-        x: 22
-        y: 100
-        width: 72
-        height: 72
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 26, y: 29, z: 27, w: 25}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 18, y: 20, z: 18, w: 20}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -147,13 +140,125 @@ TextureImporter:
       name: Frames_3
       rect:
         serializedVersion: 2
-        x: 135
-        y: 100
+        x: 178
+        y: 240
+        width: 77
+        height: 79
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 22, y: 22, z: 22, w: 22}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Frames_6
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 81
+        width: 77
+        height: 116
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 16, y: 12, z: 16, w: 92}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Frames_7
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 156
+        width: 77
+        height: 79
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 18, y: 20, z: 18, w: 20}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Frames_8
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 156
+        width: 77
+        height: 79
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 18, y: 20, z: 18, w: 20}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Frames_9
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 80
         width: 72
         height: 72
       alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 19, y: 21, z: 20, w: 19}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 22, y: 22, z: 22, w: 22}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Frames_10
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 80
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 22, y: 22, z: 22, w: 22}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Frames_11
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 7
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 22, y: 22, z: 22, w: 22}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Frames_12
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 8
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 22, y: 22, z: 22, w: 22}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Frames_2
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 32
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 6, y: 6, z: 6, w: 6}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -161,27 +266,13 @@ TextureImporter:
       name: Frames_4
       rect:
         serializedVersion: 2
-        x: 23
-        y: 15
-        width: 68
-        height: 68
+        x: 53
+        y: 32
+        width: 34
+        height: 34
       alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 25, y: 22, z: 22, w: 22}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Frames_5
-      rect:
-        serializedVersion: 2
-        x: 136
-        y: 15
-        width: 68
-        height: 68
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 23, y: 21, z: 24, w: 21}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 5, y: 5, z: 5, w: 5}
       outline: []
       physicsShape: []
       tessellationDetail: 0

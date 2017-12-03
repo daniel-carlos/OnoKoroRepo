@@ -1,10 +1,14 @@
 fileFormatVersion: 2
-guid: 1e3c25fb093aa0f4bbbbdd13c9938f59
-timeCreated: 1511653882
+guid: de47f28e2cd97934c93d6240a4734338
+timeCreated: 1512310573
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Poste_0
+    21300000: Simbolos_0
+    21300002: Simbolos_1
+    21300004: Simbolos_2
+    21300006: Simbolos_3
+    21300008: Simbolos_4
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -32,7 +36,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: -1
     aniso: -1
     mipBias: -1
     wrapU: 1
@@ -97,15 +101,71 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Poste_0
+      name: Simbolos_0
       rect:
         serializedVersion: 2
-        x: 45
-        y: 0
-        width: 29
-        height: 142
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 8
+        y: 164
+        width: 52
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Simbolos_1
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 164
+        width: 53
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Simbolos_2
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 89
+        width: 52
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Simbolos_3
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 89
+        width: 53
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Simbolos_4
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 15
+        width: 56
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
