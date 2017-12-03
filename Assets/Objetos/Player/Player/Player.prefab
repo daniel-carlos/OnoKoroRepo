@@ -132,6 +132,7 @@ GameObject:
   - component: {fileID: 4829783403724004}
   - component: {fileID: 114990579830887198}
   - component: {fileID: 114592421872042696}
+  - component: {fileID: 61844680170556578}
   m_Layer: 0
   m_Name: "Ataque B\xE1sico"
   m_TagString: Untagged
@@ -236,6 +237,7 @@ GameObject:
   - component: {fileID: 114844065733089360}
   - component: {fileID: 114437207461610744}
   - component: {fileID: 114976110804613268}
+  - component: {fileID: 114818324581842142}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -362,7 +364,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1944401661880204}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.051, y: 0.096, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4938417675759486}
@@ -566,6 +568,31 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.25079226, y: 0.05237761}
   m_EdgeRadius: 0
+--- !u!61 &61844680170556578
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1582288106566280}
+  m_Enabled: 0
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.017586231, y: 0.44317222}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.13475895, y: 0.25434542}
+  m_EdgeRadius: 0
 --- !u!70 &70306226627128032
 CapsuleCollider2D:
   m_ObjectHideFlags: 1
@@ -592,7 +619,7 @@ Animator:
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: bdf1d0ed56c1aa546aabac5bce72a716, type: 2}
   m_CullingMode: 0
-  m_UpdateMode: 0
+  m_UpdateMode: 1
   m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
   m_WarningMessage: 
@@ -885,6 +912,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cooldown: 0.4
   last: 0
+--- !u!114 &114818324581842142
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1944401661880204}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67676f17197ef66479118db40b830e8b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHP: 100
+  hp: 0
+  damageListener: {fileID: 0}
 --- !u!114 &114844065733089360
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -932,6 +973,10 @@ MonoBehaviour:
   requisios:
   - {fileID: 114592421872042696}
   anim: {fileID: 95440582193882954}
+  dano:
+    owner: {fileID: 0}
+    power: 0
+    info: 
 --- !u!198 &198763377968272688
 ParticleSystem:
   m_ObjectHideFlags: 1

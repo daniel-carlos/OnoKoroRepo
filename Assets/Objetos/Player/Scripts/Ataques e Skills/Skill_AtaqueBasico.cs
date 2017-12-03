@@ -5,6 +5,7 @@ using UnityEngine;
 public class Skill_AtaqueBasico : Skill
 {
 	public Animator anim;
+	public Damage dano;
 	// Use this for initialization
 	void Start ()
 	{
@@ -21,5 +22,11 @@ public class Skill_AtaqueBasico : Skill
 	{
 		anim.SetFloat ("tipo_ataque", 0f);
 		anim.SetTrigger ("ataque");
+	}
+
+	void OnTriggerEnter2D (Collider2D col)
+	{
+		Debug.Log (col);
+		col.transform.root.GetComponent<Vida> ().Damage (dano);
 	}
 }

@@ -122,12 +122,12 @@ Prefab:
     - target: {fileID: 224327136289057390, guid: 5d1bd7a72a966254081aeef8a9e002ca,
         type: 2}
       propertyPath: m_LocalPosition.x
-      value: -101.5
+      value: -197
       objectReference: {fileID: 0}
     - target: {fileID: 224327136289057390, guid: 5d1bd7a72a966254081aeef8a9e002ca,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: 119.70001
+      value: 191.20001
       objectReference: {fileID: 0}
     - target: {fileID: 224327136289057390, guid: 5d1bd7a72a966254081aeef8a9e002ca,
         type: 2}
@@ -228,7 +228,7 @@ Prefab:
         type: 2}
       propertyPath: personagem
       value: 
-      objectReference: {fileID: 911119033}
+      objectReference: {fileID: 722459167}
     - target: {fileID: 224492427596035294, guid: 5d1bd7a72a966254081aeef8a9e002ca,
         type: 2}
       propertyPath: m_LocalPosition.x
@@ -462,28 +462,43 @@ Prefab:
     - target: {fileID: 212557456075070288, guid: 8ae84cc5a351ee043bcd88f8de8a1fe7,
         type: 2}
       propertyPath: m_Color.r
-      value: 0
+      value: 0.8088235
       objectReference: {fileID: 0}
     - target: {fileID: 212557456075070288, guid: 8ae84cc5a351ee043bcd88f8de8a1fe7,
         type: 2}
       propertyPath: m_Color.g
-      value: 0
+      value: 0.59472317
       objectReference: {fileID: 0}
     - target: {fileID: 212557456075070288, guid: 8ae84cc5a351ee043bcd88f8de8a1fe7,
         type: 2}
       propertyPath: m_Color.b
-      value: 0
+      value: 0.59472317
       objectReference: {fileID: 0}
     - target: {fileID: 212557456075070288, guid: 8ae84cc5a351ee043bcd88f8de8a1fe7,
         type: 2}
       propertyPath: m_MaskInteraction
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 95440582193882954, guid: 8ae84cc5a351ee043bcd88f8de8a1fe7,
         type: 2}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: b063aa708939b6e4b947f0924e08e28e, type: 2}
+      objectReference: {fileID: 9100000, guid: bdf1d0ed56c1aa546aabac5bce72a716, type: 2}
+    - target: {fileID: 212557456075070288, guid: 8ae84cc5a351ee043bcd88f8de8a1fe7,
+        type: 2}
+      propertyPath: m_FlipY
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 212557456075070288, guid: 8ae84cc5a351ee043bcd88f8de8a1fe7,
+        type: 2}
+      propertyPath: m_FlipX
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114818324581842142, guid: 8ae84cc5a351ee043bcd88f8de8a1fe7,
+        type: 2}
+      propertyPath: damageListener
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8ae84cc5a351ee043bcd88f8de8a1fe7, type: 2}
   m_IsPrefabParent: 0
@@ -1061,20 +1076,18 @@ GameObject:
   m_PrefabParentObject: {fileID: 1944401661880204, guid: 8ae84cc5a351ee043bcd88f8de8a1fe7,
     type: 2}
   m_PrefabInternal: {fileID: 1430401800}
---- !u!114 &722459166
+--- !u!114 &722459166 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 722459165}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
+  m_PrefabParentObject: {fileID: 114818324581842142, guid: 8ae84cc5a351ee043bcd88f8de8a1fe7,
+    type: 2}
+  m_PrefabInternal: {fileID: 1430401800}
   m_Script: {fileID: 11500000, guid: 67676f17197ef66479118db40b830e8b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxHP: 100
-  hp: 0
-  damageListener: {fileID: 1124687063}
+--- !u!114 &722459167 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114976110804613268, guid: 8ae84cc5a351ee043bcd88f8de8a1fe7,
+    type: 2}
+  m_PrefabInternal: {fileID: 1430401800}
+  m_Script: {fileID: 11500000, guid: a0b2ba47819fa0c44948f592f4d4e870, type: 3}
 --- !u!4 &722459174 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4495845068240434, guid: 8ae84cc5a351ee043bcd88f8de8a1fe7,
@@ -1333,31 +1346,6 @@ MonoBehaviour:
   alvo: {fileID: 722459174}
   smooth: 8
   offset: {x: 0, y: 0, z: -10}
---- !u!1 &911119031 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1944401661880204, guid: 8ae84cc5a351ee043bcd88f8de8a1fe7,
-    type: 2}
-  m_PrefabInternal: {fileID: 173931361}
---- !u!114 &911119032
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 911119031}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 67676f17197ef66479118db40b830e8b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxHP: 100
-  hp: 0
-  damageListener: {fileID: 1124687063}
---- !u!114 &911119033 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114976110804613268, guid: 8ae84cc5a351ee043bcd88f8de8a1fe7,
-    type: 2}
-  m_PrefabInternal: {fileID: 173931361}
-  m_Script: {fileID: 11500000, guid: a0b2ba47819fa0c44948f592f4d4e870, type: 3}
 --- !u!1 &1085158043
 GameObject:
   m_ObjectHideFlags: 0
@@ -1402,12 +1390,12 @@ Prefab:
     - target: {fileID: 224506333178898468, guid: 3e66e38f62eb3d94fbe980c3b52f09b5,
         type: 2}
       propertyPath: m_LocalPosition.x
-      value: 8.110001
+      value: 8.109985
       objectReference: {fileID: 0}
     - target: {fileID: 224506333178898468, guid: 3e66e38f62eb3d94fbe980c3b52f09b5,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: -143.3
+      value: -139.8
       objectReference: {fileID: 0}
     - target: {fileID: 224506333178898468, guid: 3e66e38f62eb3d94fbe980c3b52f09b5,
         type: 2}
@@ -1784,15 +1772,20 @@ Prefab:
       propertyPath: m_RootOrder
       value: 5
       objectReference: {fileID: 0}
-    - target: {fileID: 95440582193882954, guid: 8ae84cc5a351ee043bcd88f8de8a1fe7,
+    - target: {fileID: 114818324581842142, guid: 8ae84cc5a351ee043bcd88f8de8a1fe7,
         type: 2}
-      propertyPath: m_UpdateMode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 212557456075070288, guid: 8ae84cc5a351ee043bcd88f8de8a1fe7,
+      propertyPath: damageListener
+      value: 
+      objectReference: {fileID: 1124687063}
+    - target: {fileID: 114990579830887198, guid: 8ae84cc5a351ee043bcd88f8de8a1fe7,
         type: 2}
-      propertyPath: m_MaskInteraction
-      value: 0
+      propertyPath: dano.owner
+      value: 
+      objectReference: {fileID: 722459165}
+    - target: {fileID: 114990579830887198, guid: 8ae84cc5a351ee043bcd88f8de8a1fe7,
+        type: 2}
+      propertyPath: dano.power
+      value: 20
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8ae84cc5a351ee043bcd88f8de8a1fe7, type: 2}

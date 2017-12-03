@@ -47,10 +47,11 @@ public class Vida : MonoBehaviour
 
 
 
-	public virtual void Damage (Damage dano)
+	public void Damage (Damage dano)
 	{
 		hp -= dano.power;
-		if (damageListener) {
+		Debug.Log (dano.power);
+		if (damageListener != null) {
 			damageListener.SendMessage ("OnDamage", dano.power);
 		}
 	}
