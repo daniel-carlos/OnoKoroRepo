@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class PlayerHUD : MonoBehaviour
+public class PlayerHUD : MonoBehaviour, IDamageListener
 {
 	public Vida vida;
 	public ControlePersonagem personagem;
@@ -35,9 +35,17 @@ public class PlayerHUD : MonoBehaviour
 
 		sliderDano.maxValue = vida.MaxHP;
 		sliderDano.minValue = 0;
+
+		if (vidaAntigo > vida.Hp) {
+			OnDamage (new Damage ());
+		}
+
+		vidaAntigo = vida.Hp;
 	}
 
-	public void OnDamage (int power)
+	float vidaAntigo = 0;
+
+	public void OnDamage (Damage dano)
 	{
 		StopCoroutine (AtualizarDano ());
 		StartCoroutine (AtualizarDano ());

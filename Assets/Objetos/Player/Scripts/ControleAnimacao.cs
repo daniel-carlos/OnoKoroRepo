@@ -33,4 +33,8 @@ public class ControleAnimacao : MonoBehaviour
 		pers.rootMotion = root;
 	}
 
+	public void OnDamage (Damage dano)
+	{
+		anim.SetTrigger ("dano");
+	}
 }

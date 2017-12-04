@@ -26,7 +26,7 @@ public class Vida : MonoBehaviour
 	}
 
 	[Tooltip ("Objeto que será reportado sempre que esta unidade sofrer algum dano")]
-	public GameObject damageListener;
+	public GameObject[] damageListeners;
 
 	public void ResetHP ()
 	{
@@ -51,8 +51,19 @@ public class Vida : MonoBehaviour
 	{
 		hp -= dano.power;
 		Debug.Log (dano.power);
-		if (damageListener != null) {
-			damageListener.SendMessage ("OnDamage", dano.power);
+		SendMessage ("OnDamage", dano);
+
+
+		foreach (GameObject dl in damageListeners) {
+			dl.SendMessage ("OnDamage", dano, SendMessageOptions.DontRequireReceiver);
+			if (dl.GetComponent<Animator> () != null) {
+				dl.GetComponent<Animator> ().SetTrigger ("dano");
+			}
 		}
 	}
+}
+
+public interface IDamageListener
+{
+	void OnDamage (Damage dano);
 }
