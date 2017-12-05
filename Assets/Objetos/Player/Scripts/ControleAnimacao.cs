@@ -37,4 +37,9 @@ public class ControleAnimacao : MonoBehaviour
 	{
 		anim.SetTrigger ("dano");
 	}
+
+	public void OnDeath ()
+	{
+		anim.SetBool ("morte", true);
+	}
 }

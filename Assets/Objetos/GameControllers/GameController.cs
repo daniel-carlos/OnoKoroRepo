@@ -15,8 +15,7 @@ public class GameController : MonoBehaviour
 	GameObject banner;
 
 	public Canvas canvasPrincipal;
-	
-
+	public GC_Estado estadoMorto;
 
 	// Use this for initialization
 	void Start ()
@@ -66,5 +65,12 @@ public class GameController : MonoBehaviour
 	public void RetornarAoMenu ()
 	{
 		SceneManager.LoadScene ("Menu Inicial");
+	}
+
+
+
+	public void OnDeath ()
+	{
+		GetComponent<FSM> ().MudarEstado (estadoMorto);
 	}
 }

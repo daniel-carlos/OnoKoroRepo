@@ -30,7 +30,7 @@ public class ZonaDano : MonoBehaviour
 			col.gameObject.SendMessage ("Damage", dano, SendMessageOptions.DontRequireReceiver);
 
 			StartCoroutine (AplicarDano (col.gameObject));
-
+			Debug.Log ("trigger");
 		}
 	}
 
@@ -42,7 +42,7 @@ public class ZonaDano : MonoBehaviour
 			col.gameObject.SendMessage ("Damage", dano, SendMessageOptions.DontRequireReceiver);
 
 			StartCoroutine (AplicarDano (col.gameObject));
-
+			Debug.Log ("collision");
 		}
 	}
 
@@ -65,8 +65,9 @@ public class ZonaDano : MonoBehaviour
 	IEnumerator AplicarDano (GameObject obj)
 	{
 		while (alvos.Contains (obj)) {
-			obj.SendMessage ("Damage", dano, SendMessageOptions.DontRequireReceiver);
 			yield return new WaitForSeconds (intervalo);
+			obj.SendMessage ("Damage", dano, SendMessageOptions.DontRequireReceiver);
+
 		}
 	}
 }

@@ -119,4 +119,10 @@ public class ControlePersonagem : MonoBehaviour
 	{
 		postura = agachar ? 0f : 1f;
 	}
+
+
+	public void OnDeath ()
+	{
+		rb.velocity = Vector2.zero;
+	}
 }
