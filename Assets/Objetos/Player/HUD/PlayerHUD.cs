@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class PlayerHUD : MonoBehaviour, IDamageListener
+public class PlayerHUD : MonoBehaviour
 {
 	public Vida vida;
 	public ControlePersonagem personagem;

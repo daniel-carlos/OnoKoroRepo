@@ -25,8 +25,17 @@ public class Vida : MonoBehaviour
 		}
 	}
 
-	[Tooltip ("Objeto que será reportado sempre que esta unidade sofrer algum dano")]
+	[Tooltip ("Objeto que será reportado sempre que esta unidade sofrer algum dano\n" +
+	"OnDamaga(Damage dano)\nOnDeath()")]
 	public GameObject[] listeners;
+
+	[Tooltip ("Objeto que substituirá esse personagem quando morrer.")]
+	public GameObject substituto;
+
+	[Tooltip ("Deve-se destruir essse objeto quando morrer?")]
+	public bool destruirObjeto = true;
+	[Tooltip ("Delay entre a morte e destruir o objeto")]
+	public float tempoSobrevida = 0f;
 
 	public void ResetHP ()
 	{
@@ -79,11 +88,16 @@ public class Vida : MonoBehaviour
 			dl.SendMessage ("OnDeath", SendMessageOptions.DontRequireReceiver);
 		}
 
-		BroadcastMessage ("OnDeath");
-	}
-}
 
-public interface IDamageListener
-{
-	void OnDamage (Damage dano);
+
+		BroadcastMessage ("OnDeath");
+
+		if (substituto != null) {
+			GameObject clone = Instantiate (substituto, transform.position, transform.rotation);
+		}
+
+		if (destruirObjeto) {
+			Destroy (gameObject, tempoSobrevida);
+		}
+	}
 }

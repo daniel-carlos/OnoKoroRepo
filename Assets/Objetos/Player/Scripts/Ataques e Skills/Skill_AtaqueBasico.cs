@@ -26,7 +26,10 @@ public class Skill_AtaqueBasico : Skill
 
 	void OnTriggerEnter2D (Collider2D col)
 	{
-		Debug.Log (col);
-		col.transform.root.GetComponent<Vida> ().Damage (dano);
+		try {
+			col.transform.root.GetComponent<Vida> ().Damage (dano);
+		} catch {
+
+		}
 	}
 }
