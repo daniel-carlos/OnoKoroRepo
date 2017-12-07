@@ -6,6 +6,7 @@ public class FSM_GC_Pausa : GC_Estado
 {
 	public GameObject menuPausa;
 	public GC_Estado estadoNormal;
+	public GC_Estado estadoEnciclopedia;
 
 	public override void Entrar (FSM fsm)
 	{

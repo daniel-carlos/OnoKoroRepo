@@ -1,0 +1,98 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1175535376790418}
+  m_IsPrefabParent: 1
+--- !u!1 &1175535376790418
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4943940650229264}
+  - component: {fileID: 114156728399327006}
+  m_Layer: 0
+  m_Name: Enciclopedia
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4943940650229264
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1175535376790418}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.10800167, y: 1.7828116, z: -0.026367188}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114156728399327006
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1175535376790418}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b67fbe51be38ee45bd228f3949774f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  monstros:
+  - nome: Honne-Onna
+    imagem: {fileID: 21300000, guid: ffe4e5ac4d247dc41a8f2d1cdb099aa8, type: 3}
+    conteudo: Nam quis nulla. Integer malesuada. In in enim a arcu imperdiet malesuada.
+      Sed vel lectus. Donec odio urna, tempus molestie, porttitor ut, iaculis quis,
+      sem. Phasellus rhoncus. Aenean id metus id velit ullamcorper pulvinar. Vestibulum
+      fermentum tortor id mi. Pellentesque ipsum. Nulla
+  - nome: Abura-Akago
+    imagem: {fileID: 21300000, guid: b6d4186a619e95647ae11d7dbb7f4a71, type: 3}
+    conteudo: Spicy jalapeno bacon ipsum dolor amet bresaola beef ribs andouille turkey
+      salami, turducken chuck hamburger pork loin tri-tip burgdoggen spare ribs pork
+      chop picanha kevin. Chuck meatloaf short loin boudin hamburger jerky ham, turducken
+      sirloin flank chicken. Sirloin burgdoggen sausage ground round ham, filet mignon
+      alcatra buffalo drumstick biltong kielbasa pork jowl. Shank leberkas corned
+      beef frankfurter.
+  - nome: Kaze
+    imagem: {fileID: 21300000, guid: 937bff427be2e924cb49bbbb15b616ca, type: 3}
+    conteudo: "O element vento \xE9 descrito na cultura japonesa como leveza, velocidade
+      e sagacidade, os antigos ninjas descreviam a habilidade de dar saltos como t\xE9cnica
+      do vento."
+  - nome: Kin
+    imagem: {fileID: 21300000, guid: 7d73ede38cd94c24c97b56bbddc7396d, type: 3}
+    conteudo: "O metal \xE9 representado com o mesmo Kanji de ouro, por isso o metal
+      \xE9 o simbolo da riqueza, mas devido a sua propriedade de forja, o metal \xE9
+      s\xEDmbolo da guerra tamb\xE9m. No Bushido o metal \xE9 um material sagrado."
+  - nome: Hi
+    imagem: {fileID: 21300000, guid: 6c98c216e03ae0549bb60228dcfbeee8, type: 3}
+    conteudo: "O elemento fogo \xE9 representado com um kanji que lembra uma pequena
+      fogueira queimando. O fogo \xE9 dito como a destrui\xE7\xE3o, mas tamb\xE9m
+      a ambi\xE7\xE3o e poder. O uso da p\xF3lvora chegou muito tarde no Jap\xE3o,
+      no s\xE9culo XVII, por isso o fogo possuiu uma natureza muito mais m\xEDstica
+      que sua interpreta\xE7\xE3o ocidental.\r"
+  - nome: Kirin
+    imagem: {fileID: 21300000, guid: fd921c3d5ff8b794b8bf8d1f95422e54, type: 3}
+    conteudo: "A vers\xE3o japonesa da criatura Qlin chin\xEAsa, que \xE9 descrito
+      usualmente como parte drag\xE3o, veado, peixe a boi. Dito como criatura benevolente
+      \ e o guardi\xE3o do elemento do metal. Sua fraqueza \xE9 o fogo. "
+  - nome: Katana
+    imagem: {fileID: 21300000, guid: fd921c3d5ff8b794b8bf8d1f95422e54, type: 3}
+    conteudo: "A arma tradicional japonesa \xE9 mais mito do que real vantagem, sua
+      l\xE2mina dobradi\xE7a por vezes era muito fr\xE1gil, sendo que seu valor s\xF3
+      poderia ser demonstrado num verdadeiro combate, com isso os samurais tinham
+      uma t\xE9cnica chamada Tsujigiri(matan\xE7a pelas ruas), no qual o Samurai ap\xF3s
+      receber sua nova forjada katana, atacava covardemente alguma pedestre indefeso
+      pelas costas durante a noite, testando assim a efic\xE1cia da sua arma."

@@ -5,9 +5,17 @@ using UnityEngine;
 public class Skill_Projetil : Skill
 {
 	public Animator anim;
+
+	[Header ("Projétil")]
 	public Projectile shourikenPrefab;
-	public Transform spawnPoint;
+	public Damage dano;
 	public float speed = 3f;
+
+	[Space ()]
+	public Transform spawnPoint;
+
+
+
 	// Use this for initialization
 	void Start ()
 	{
@@ -27,5 +35,6 @@ public class Skill_Projetil : Skill
 
 		Projectile shouriken = Instantiate (shourikenPrefab, spawnPoint.position, spawnPoint.rotation);
 		shouriken.Lancar (spawnPoint.right * speed);
+		shouriken.damage = dano;
 	}
 }

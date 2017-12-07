@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Vida : MonoBehaviour
+public class Vida : MonoBehaviour, IDamageble
 {
 	[SerializeField]
 	private int maxHP = 100;
