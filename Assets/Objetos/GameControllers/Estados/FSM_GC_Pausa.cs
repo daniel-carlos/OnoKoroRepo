@@ -25,5 +25,6 @@ public class FSM_GC_Pausa : GC_Estado
 	public override void Sair (FSM fsm)
 	{
 		menuPausa.SetActive (false);
+		Time.timeScale = 1f;
 	}
 }

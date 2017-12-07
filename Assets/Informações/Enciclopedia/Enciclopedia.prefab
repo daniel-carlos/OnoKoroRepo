@@ -89,10 +89,18 @@ MonoBehaviour:
       usualmente como parte drag\xE3o, veado, peixe a boi. Dito como criatura benevolente
       \ e o guardi\xE3o do elemento do metal. Sua fraqueza \xE9 o fogo. "
   - nome: Katana
-    imagem: {fileID: 21300000, guid: fd921c3d5ff8b794b8bf8d1f95422e54, type: 3}
+    imagem: {fileID: 21300000, guid: 170c0788912cae44bbdf9e3691fc94dc, type: 3}
     conteudo: "A arma tradicional japonesa \xE9 mais mito do que real vantagem, sua
       l\xE2mina dobradi\xE7a por vezes era muito fr\xE1gil, sendo que seu valor s\xF3
       poderia ser demonstrado num verdadeiro combate, com isso os samurais tinham
       uma t\xE9cnica chamada Tsujigiri(matan\xE7a pelas ruas), no qual o Samurai ap\xF3s
       receber sua nova forjada katana, atacava covardemente alguma pedestre indefeso
-      pelas costas durante a noite, testando assim a efic\xE1cia da sua arma."
+      pelas costas durante a noite, testando assim a efic\xE1cia da sua arma. "
+  - nome: Shouriken
+    imagem: {fileID: 21300000, guid: a6832da15a60636488b966419cc4e8ea, type: 3}
+    conteudo: "A arma tradicional japonesa \xE9 mais mito do que real vantagem, sua
+      l\xE2mina dobradi\xE7a por vezes era muito fr\xE1gil, sendo que seu valor s\xF3
+      poderia ser demonstrado num verdadeiro combate, com isso os samurais tinham
+      uma t\xE9cnica chamada Tsujigiri(matan\xE7a pelas ruas), no qual o Samurai ap\xF3s
+      receber sua nova forjada katana, atacava covardemente alguma pedestre indefeso
+      pelas costas durante a noite, testando assim a efic\xE1cia da sua arma. "
