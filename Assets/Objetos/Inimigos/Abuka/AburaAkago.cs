@@ -27,4 +27,9 @@ public class AburaAkago : MonoBehaviour
 		particles.Emit (200);
 
 	}
+
+	void OnTriggerEnter2D (Collider2D col)
+	{
+		//if(col.tag == "Player"){}
+	}
 }

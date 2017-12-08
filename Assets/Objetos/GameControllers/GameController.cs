@@ -73,4 +73,14 @@ public class GameController : MonoBehaviour
 	{
 		GetComponent<FSM> ().MudarEstado (estadoMorto);
 	}
+
+	public GC_Estado estadoItem;
+	public Animator kanjiAnim;
+
+	public void OnItemColetado (int tipo)
+	{
+		kanjiAnim.SetTrigger ("ativar");
+
+		GetComponent<FSM> ().MudarEstado (estadoItem);
+	}
 }

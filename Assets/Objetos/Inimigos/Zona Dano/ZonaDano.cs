@@ -66,7 +66,9 @@ public class ZonaDano : MonoBehaviour
 	{
 		while (alvos.Contains (obj)) {
 			yield return new WaitForSeconds (intervalo);
-			obj.SendMessage ("Damage", dano, SendMessageOptions.DontRequireReceiver);
+			if (obj != null && alvos.Contains (obj)) {
+				obj.SendMessage ("Damage", dano, SendMessageOptions.DontRequireReceiver);
+			}
 
 		}
 	}

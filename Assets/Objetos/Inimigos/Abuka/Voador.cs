@@ -17,7 +17,13 @@ public class Voador : MonoBehaviour
 	void Update ()
 	{
 		
-
+		Vector3 rot = transform.eulerAngles;
+		if (alvo.position.x > transform.position.x) {
+			rot.y = 180;
+		} else {
+			rot.y = 0;
+		}
+		transform.eulerAngles = rot;
 
 		Mover ();
 	}
