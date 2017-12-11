@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SensorContato : MonoBehaviour
 {
-	private bool grounded;
+	public bool grounded;
 
 	public bool Grounded {
 		get {
@@ -28,7 +28,7 @@ public class SensorContato : MonoBehaviour
 		
 	}
 
-	void OnTriggerEnter2D (Collider2D col)
+	void OnTriggerStay2D (Collider2D col)
 	{
 		if (!grounded && reportarInicioToque) {
 			transform.root.BroadcastMessage ("OnAterrissagem", SendMessageOptions.DontRequireReceiver);

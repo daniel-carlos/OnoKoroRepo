@@ -2,15 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class Skill : MonoBehaviour
+public class Skill : MonoBehaviour
 {
 	public Skill_Requisito[] requisios;
+	public Skill_Disparador[] disparadores;
 
-	//	// Use this for initialization
-	//	void Start ()
-	//	{
-	//		requisios = GetComponents<Skill_Requisito> ();
-	//	}
+	// Use this for initialization
+	void Start ()
+	{
+		requisios = GetComponents<Skill_Requisito> ();
+		disparadores = GetComponents<Skill_Disparador> ();
+	}
 
 	public void TentarDisparo ()
 	{
@@ -30,13 +32,14 @@ public abstract class Skill : MonoBehaviour
 
 	void Disparar ()
 	{
-		FireSkill ();
+		foreach (Skill_Disparador dis in disparadores) {
+			dis.FireSkill ();
+		}
+
 		foreach (Skill_Requisito sr in requisios) {
 			sr.Sucesso ();
 		}
 
 		BroadcastMessage ("OnFireSkill", this, SendMessageOptions.DontRequireReceiver);
 	}
-
-	protected abstract void FireSkill ();
 }

@@ -12,6 +12,16 @@ public class ControlePersonagem : MonoBehaviour
 	[Tooltip ("1=direita, -1=Esquerda")]
 	private float lookSide = 1f;
 
+	public float LookSide {
+		get {
+			return lookSide;
+		}
+		set {
+			lookSide = value;
+		}
+	}
+
+
 	[Tooltip ("Se a velocidade do personagem deve ser controlada pelo root")]
 	public bool rootMotion = false;
 
@@ -61,7 +71,7 @@ public class ControlePersonagem : MonoBehaviour
 		
 	}
 
-	void AjustarDirecao ()
+	public void AjustarDirecao ()
 	{
 		Vector3 rot = transform.eulerAngles;
 		if (lookSide > 0) {

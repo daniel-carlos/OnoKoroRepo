@@ -4,7 +4,7 @@ using System.Collections;
 
 public abstract class Skill_Requisito : MonoBehaviour
 {
-	//Pergunta se esse requisito está sendo satisfeito
+
 	public abstract bool Passar ();
 
 	//Chamado quando esse requisito não for atendido
