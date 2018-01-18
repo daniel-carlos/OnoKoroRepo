@@ -18,7 +18,7 @@ public class Skill_AtaqueBasico : Skill
 		
 	}
 
-	protected override void FireSkill ()
+	protected void FireSkill ()
 	{
 		anim.SetFloat ("tipo_ataque", 0f);
 		anim.SetTrigger ("ataque");

@@ -26,7 +26,7 @@ public class Skill_SaltoDuplo : Skill
 		anim.SetFloat ("roll", 0f);
 	}
 
-	protected override void FireSkill ()
+	protected void FireSkill ()
 	{
 		if (!salto) {
 			pers.Jump (true);

@@ -28,7 +28,7 @@ public class Skill_Projetil : Skill
 
 	}
 
-	protected override void FireSkill ()
+	protected void FireSkill ()
 	{
 		anim.SetFloat ("tipo_ataque", 1f);
 		anim.SetTrigger ("ataque");

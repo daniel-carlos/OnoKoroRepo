@@ -18,7 +18,7 @@ public class Skill_Dash : Skill
 		
 	}
 
-	protected override void FireSkill ()
+	protected void FireSkill ()
 	{
 		anim.SetFloat ("tipo_ataque", 3f);
 		anim.SetTrigger ("ataque");
